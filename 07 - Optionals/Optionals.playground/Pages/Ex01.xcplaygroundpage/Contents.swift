@@ -1,11 +1,11 @@
 func isPrime(_ number: Int) -> Bool {
-    let squareRoot = Int(Double(number).squareRoot())
+    let start = 2
     
-    guard number > 1 else {
+    if number < start {
         return false
     }
     
-    for i in 2...squareRoot {
+    for i in start..<number {
         if number.isMultiple(of: i) {
             return false
         }
@@ -14,4 +14,4 @@ func isPrime(_ number: Int) -> Bool {
     return true
 }
 
-print(isPrime(10))
+print(isPrime(2))
