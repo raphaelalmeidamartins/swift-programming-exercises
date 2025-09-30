@@ -1,5 +1,5 @@
 func calculateBill(value: Double, customers: Int) -> Double  {
-    guard customers > 0 else {
+    if customers <= 0 {
         return 0.0
     }
 
