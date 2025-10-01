@@ -9,3 +9,6 @@ func calculateBill(value: Double, customers: Int) -> Double  {
 }
 
 print(calculateBill(value: 120, customers: 4))
+
+let array = [1, 2, 3]
+
